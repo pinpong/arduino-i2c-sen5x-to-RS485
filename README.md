@@ -18,7 +18,7 @@ The connection from SEN55 to Arduino
 | SCL     | SCL         | Yellow        |
 | SEL     | GND for I2C | Blue          |
 
-The connection from to TTL to RS485
+The connection from Arduino to TTL to RS485
 
 | _Arduino_ | _TTL to RS485_ | _Jumper Wire_ |
 | --------- | -------------- | ------------- |
@@ -33,6 +33,8 @@ The connection TTL to RS485 to USB-RS485-WE
 | -------------- | -------- | ------------- |
 | A              | DATA+    | Orange        |
 | B              | DATA-    | Yellow        |
+
+For the 5V supply conect the USB485 GND & 5V to the arduino or use the usb power supply.
 
 ## Installation
 
