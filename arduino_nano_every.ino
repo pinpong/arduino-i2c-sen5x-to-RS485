@@ -55,24 +55,32 @@ void loop() {
 
   if (error) {
     ModbusRTUServer.holdingRegisterWrite(0x08, error);
-  } else {
-    if (
-      isnan(massConcentrationPm1p0) {
-        ModbusRTUServer.holdingRegisterWrite(0x00, static_cast<int>(massConcentrationPm1p0 * 100));
-      } if (isnan(massConcentrationPm2p5) {
-        ModbusRTUServer.holdingRegisterWrite(0x01, static_cast<int>(massConcentrationPm2p5 * 100));
-      } if (isnan(massConcentrationPm4p0) {
-        ModbusRTUServer.holdingRegisterWrite(0x02, static_cast<int>(massConcentrationPm4p0 * 100));
-      } if (isnan(massConcentrationPm10p0) {
-        ModbusRTUServer.holdingRegisterWrite(0x03, static_cast<int>(massConcentrationPm10p0 * 100));
-      } if (isnan(ambientHumidity) {
-        ModbusRTUServer.holdingRegisterWrite(0x04, static_cast<int>(ambientHumidity * 100));
-      } if (isnan(ambientTemperature) {
-        ModbusRTUServer.holdingRegisterWrite(0x05, static_cast<int>(ambientTemperature * 100));
-      } if (isnan(vocIndex) {
-        ModbusRTUServer.holdingRegisterWrite(0x06, static_cast<int>(vocIndex * 100));
-      } if (isnan(noxIndex)) {
-      ModbusRTUServer.holdingRegisterWrite(0x07, static_cast<int>(noxIndex * 100));
-    }
+    return;
+  }
+
+  if (
+    isnan(massConcentrationPm1p0)) {
+    ModbusRTUServer.holdingRegisterWrite(0x00, static_cast<int>(massConcentrationPm1p0 * 100));
+  }
+  if (isnan(massConcentrationPm2p5)) {
+    ModbusRTUServer.holdingRegisterWrite(0x01, static_cast<int>(massConcentrationPm2p5 * 100));
+  }
+  if (isnan(massConcentrationPm4p0)) {
+    ModbusRTUServer.holdingRegisterWrite(0x02, static_cast<int>(massConcentrationPm4p0 * 100));
+  }
+  if (isnan(massConcentrationPm10p0)) {
+    ModbusRTUServer.holdingRegisterWrite(0x03, static_cast<int>(massConcentrationPm10p0 * 100));
+  }
+  if (isnan(ambientHumidity)) {
+    ModbusRTUServer.holdingRegisterWrite(0x04, static_cast<int>(ambientHumidity * 100));
+  }
+  if (isnan(ambientTemperature)) {
+    ModbusRTUServer.holdingRegisterWrite(0x05, static_cast<int>(ambientTemperature * 100));
+  }
+  if (isnan(vocIndex)) {
+    ModbusRTUServer.holdingRegisterWrite(0x06, static_cast<int>(vocIndex * 100));
+  }
+  if (isnan(noxIndex)) {
+    ModbusRTUServer.holdingRegisterWrite(0x07, static_cast<int>(noxIndex * 100));
   }
 }
