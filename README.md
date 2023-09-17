@@ -10,24 +10,53 @@
 
 The connection from SEN55 to Arduino Nano Every
 
-- SEN55 black to Arduino Nano Every GND
-- SEN55 white to Arduino Nano Every +5v
-- SEN55 yellow to Arduino Nano Every SCL / D19
-- SEN55 green to Arduino Nano Every SDA / D18
-- SEN55 red not in use
-- SEN55 blue not in use
+| _SEN5X_ | _Arduino_   | _Jumper Wire_ |
+| ------- | ----------- | ------------- |
+| VCC     | 5V          | Red           |
+| GND     | GND         | Black         |
+| SDA     | SDA         | Green         |
+| SCL     | SCL         | Yellow        |
+| SEL     | GND for I2C | Blue          |
 
 The connection from Arduino Nano Every to TTL to RS485
 
-- Arduino TX (1) to TTL to RS485 DI
-- Arduino RX (2) to TTL to RS485 RO
-- Arduino D2 to TTL to RS485 DE
-- Arduino D2 to TTL to RS485 RE
+| _Arduino_ | _TTL to RS485_ | _Jumper Wire_ |
+| --------- | -------------- | ------------- |
+| TX        | DI             | Green         |
+| RX        | RO             | Orange        |
+| D2        | DE             | Brown         |
+| D2        | RE             | Brown         |
 
 The connection TTL to RS485 to USB-RS485-WE
 
-- TTL to RS485 B to USB485 Data-
-- TTL to RS485 A to USB485 Data+
+| _TTL to RS485_ | _USB485_ | _Jumper Wire_ |
+| -------------- | -------- | ------------- |
+| A              | DATA+    | Orange        |
+| B              | DATA-    | Yellow        |
+
+
+## Installation
+
+1. Download the latest SensirionI2CSen5x release with
+[Arduino IDE](http://www.arduino.cc/en/main/software) via
+
+	`Sketch => Include Library => Manage Libraries => Search for SensirionI2CSen5x and install it`
+
+
+2. Open the `arduino_nano_every` file within the Arduino IDE
+
+
+3. Click the `Upload` button in the Arduino IDE or
+
+   	Sketch => Upload
+
+4. Enjoy
+
+
+
+## Troubleshooting
+If you want use another Arduino device initialize the RS485Class with the proper serial port.
+
 
 
 
