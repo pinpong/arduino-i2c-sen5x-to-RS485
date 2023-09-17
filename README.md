@@ -34,31 +34,20 @@ The connection TTL to RS485 to USB-RS485-WE
 | A              | DATA+    | Orange        |
 | B              | DATA-    | Yellow        |
 
-
 ## Installation
 
-1. Download the latest SensirionI2CSen5x release with
-[Arduino IDE](http://www.arduino.cc/en/main/software) via
+1. Download the latest SensirionI2CSen5x release with [Arduino IDE](http://www.arduino.cc/en/main/software) via
 
-	`Sketch => Include Library => Manage Libraries => Search for SensirionI2CSen5x and install it`
-
+   `Sketch => Include Library => Manage Libraries => Search for SensirionI2CSen5x and install it`
 
 2. Open the `arduino_nano_every` file within the Arduino IDE
 
-
 3. Click the `Upload` button in the Arduino IDE or
 
-   	Sketch => Upload
+   Sketch => Upload
 
 4. Enjoy
 
-
-
 ## Troubleshooting
+
 If you want use another Arduino device initialize the RS485Class with the proper serial port.
-
-
-
-
-
-
