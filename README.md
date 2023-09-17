@@ -46,7 +46,26 @@ The connection TTL to RS485 to USB-RS485-WE
 
    Sketch => Upload
 
-4. Enjoy
+## Read the data
+
+- Mode: RTU
+- Baudrate: 96000
+- Slave ID: 42
+- Parity: None
+- Data bits: 8
+- Stop bits: 8
+
+| _Holding Register_ | _Data_      |
+|--------------------|-------------|
+| 0x00               | PM1         |
+| 0x01               | PM2.5       |
+| 0x02               | PM4         |
+| 0x03               | PM10        |
+| 0x04               | Humidity    |
+| 0x05               | Temperature |
+| 0x06               | Vox         |
+| 0x07               | Nox         |
+| 0x08               | Error       |
 
 ## Troubleshooting
 
